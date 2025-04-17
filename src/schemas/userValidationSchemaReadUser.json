@@ -1,0 +1,1 @@
+{ "usereId": { "in": "params", "isMongoId": true, "notEmpty": true } }
