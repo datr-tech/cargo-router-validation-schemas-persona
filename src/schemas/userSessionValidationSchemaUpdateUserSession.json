@@ -1,6 +1,18 @@
 {
-  "userSessionId": { "in": "params", "isMongoId": true, "notEmpty": true },
-  "userId": { "in": "body", "isMongoId": true, "notEmpty": false, "default": "undefined", "optional": { "values": "undefined" } },
+  "adminStatusId": {
+    "default": "undefined",
+    "in": "body",
+    "isMongoId": true,
+    "notEmpty": false,
+    "optional": { "values": "undefined" }
+  },
+  "adminUserId": {
+    "in": "body",
+    "isMongoId": true,
+    "notEmpty": false,
+    "default": "undefined",
+    "optional": { "values": "undefined" }
+  },
   "description": {
     "default": "undefined",
     "in": "body",
@@ -17,6 +29,12 @@
     "default": "undefined",
     "optional": { "values": "undefined" }
   },
-  "adminStatusId": { "default": "undefined", "in": "body", "isMongoId": true, "notEmpty": false, "optional": { "values": "undefined" } },
-  "adminUserId": { "in": "body", "isMongoId": true, "notEmpty": false, "default": "undefined", "optional": { "values": "undefined" } }
+  "userId": {
+    "in": "body",
+    "isMongoId": true,
+    "notEmpty": false,
+    "default": "undefined",
+    "optional": { "values": "undefined" }
+  },
+  "userSessionId": { "in": "params", "isMongoId": true, "notEmpty": true }
 }

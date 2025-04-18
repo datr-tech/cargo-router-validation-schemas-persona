@@ -4,14 +4,14 @@
   "private": false,
   "description": "Cargo router validation schemas for persona",
   "keywords": [
-		"cargo",
+    "cargo",
     "datr.tech",
-		"persona",
-		"express",
-		"express-validator",
-		"router",
-		"schemas",
-		"typescript"
+    "persona",
+    "express",
+    "express-validator",
+    "router",
+    "schemas",
+    "typescript"
   ],
   "homepage": "https://github.com/datr.tech/cargo-router-validation-schemas-persona",
   "repository": {

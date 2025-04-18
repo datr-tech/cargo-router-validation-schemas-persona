@@ -1,7 +1,12 @@
 {
-  "organisationId": { "in": "params", "isMongoId": true, "notEmpty": true },
-  "frameworkId": { "in": "body", "isMongoId": true, "notEmpty": false, "default": "undefined", "optional": { "values": "undefined" } },
-  "organisationTypeId": {
+  "adminStatusId": {
+    "default": "undefined",
+    "in": "body",
+    "isMongoId": true,
+    "notEmpty": false,
+    "optional": { "values": "undefined" }
+  },
+  "adminUserId": {
     "in": "body",
     "isMongoId": true,
     "notEmpty": false,
@@ -16,6 +21,13 @@
     "notEmpty": false,
     "optional": { "values": "undefined" }
   },
+  "frameworkId": {
+    "in": "body",
+    "isMongoId": true,
+    "notEmpty": false,
+    "default": "undefined",
+    "optional": { "values": "undefined" }
+  },
   "name": {
     "in": "body",
     "isString": true,
@@ -24,6 +36,12 @@
     "default": "undefined",
     "optional": { "values": "undefined" }
   },
-  "adminStatusId": { "default": "undefined", "in": "body", "isMongoId": true, "notEmpty": false, "optional": { "values": "undefined" } },
-  "adminUserId": { "in": "body", "isMongoId": true, "notEmpty": false, "default": "undefined", "optional": { "values": "undefined" } }
+  "organisationId": { "in": "params", "isMongoId": true, "notEmpty": true },
+  "organisationTypeId": {
+    "in": "body",
+    "isMongoId": true,
+    "notEmpty": false,
+    "default": "undefined",
+    "optional": { "values": "undefined" }
+  }
 }

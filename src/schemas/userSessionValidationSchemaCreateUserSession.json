@@ -1,5 +1,12 @@
 {
-  "userId": { "in": "body", "isMongoId": true, "notEmpty": false },
+  "adminStatusId": {
+    "default": "undefined",
+    "in": "body",
+    "isMongoId": true,
+    "notEmpty": false,
+    "optional": { "values": "undefined" }
+  },
+  "adminUserId": { "in": "body", "isMongoId": true, "notEmpty": false },
   "description": {
     "default": "undefined",
     "in": "body",
@@ -8,7 +15,11 @@
     "notEmpty": false,
     "optional": { "values": "undefined" }
   },
-  "name": { "in": "body", "isString": true, "isLength": { "options": { "min": 8, "max": 100 } }, "notEmpty": true },
-  "adminStatusId": { "default": "undefined", "in": "body", "isMongoId": true, "notEmpty": false, "optional": { "values": "undefined" } },
-  "adminUserId": { "in": "body", "isMongoId": true, "notEmpty": false }
+  "name": {
+    "in": "body",
+    "isString": true,
+    "isLength": { "options": { "min": 8, "max": 100 } },
+    "notEmpty": true
+  },
+  "userId": { "in": "body", "isMongoId": true, "notEmpty": false }
 }
