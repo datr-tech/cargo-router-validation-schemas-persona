@@ -21,6 +21,7 @@
     "default": "undefined",
     "optional": { "values": "undefined" }
   },
+  "userId": { "in": "params", "isMongoId": true, "notEmpty": true },
   "userTypeId": {
     "in": "body",
     "isMongoId": true,
@@ -28,7 +29,6 @@
     "default": "undefined",
     "optional": { "values": "undefined" }
   },
-  "userId": { "in": "params", "isMongoId": true, "notEmpty": true },
   "username": {
     "in": "body",
     "isString": true,
