@@ -33,7 +33,7 @@
     "commit-msg": "commitlint --edit",
     "format:config": "npx prettier --write './*.{cjs,js,json,mjs,ts}'",
     "format:src": "npx prettier --write './src/**/*.{json,ts}'",
-    "format": "npm-run-all format:config format:src format:test",
+    "format": "npm-run-all format:config format:src",
     "lint": "npx eslint --fix",
     "preversion": "npm-run-all format lint spell",
     "version": "npm-run-all build changelog",
@@ -44,8 +44,7 @@
     "spell": "npx cspell .",
     "test:it": "npx jest -c ./jest.config.integration.json ./test/integration",
     "test:unit": "npx jest -c ./jest.config.unit.json ./test/unit --coverage",
-    "test": "npm run test:unit",
-    "format:test": "npx prettier --write './test/**/*.{json,ts}'"
+    "test": "npm run test:unit"
   },
   "dependencies": {
     "@types/node": "^22.7.6"
